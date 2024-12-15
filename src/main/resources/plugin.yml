@@ -1,0 +1,75 @@
+name: Roleplaypack
+version: '${project.version}'
+main: org.tigerclips1.roleplaypack.Roleplaypack
+api-version: '1.20'
+author: TigerClips1
+depend:
+  [
+    GSit
+  ]
+commands:
+  angrey:
+    description: your mad
+    permissions: true
+    usage: "/angrey"
+    aliases: [ ]
+  boop:
+    description: boop any pony
+    permissions: true
+    usage: "/boop"
+    aliases: [ ]
+  brohoof:
+    description: brohoof any pony
+    permissions: true
+    usage: "/brohoof"
+    aliases: [ ]
+  cry:
+      description: your crying
+      permissions: true
+      usage: "/cry"
+      aliases: [ ]
+  dab:
+        description: your dabing for some reson
+        permissions: true
+        usage: "/dab"
+        aliases: [ ]
+  depress:
+      description: your vary vary vary sad
+      permissions: true
+      usage: "/depress"
+      aliases: [ ]
+  exctited:
+        description: your an very exctied pony
+        permissions: true
+        usage: "/exctited"
+        aliases: [ ]
+  fiestbump:
+        description: you did a classic fiset bump
+        permissions: true
+        usage: "/fiestbump"
+        aliases: [ ]
+  hug:
+        description: hhug any pony
+        permissions: true
+        usage: "/hug"
+        aliases: [ ]
+  lagthing:
+        description: you find something very very funny
+        permissions: true
+        usage: "/lagthing"
+        aliases: [ ]
+  nom:
+        description: nom any pony
+        permissions: true
+        usage: "/nom"
+        aliases: [ ]
+  scared:
+        description: you a very scared about something
+        permissions: true
+        usage: "/scared"
+        aliases: [ ]
+  tag:
+        description: tag any pony
+        permissions: true
+        usage: "/tag"
+        aliases: [ ]
