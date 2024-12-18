@@ -35,8 +35,6 @@ public class fiestbump implements Listener, CommandExecutor {
             Player player = (Player) sender;
             String playerName = player.getName();
             player.sendMessage("You fistbump " + playerName);
-            Location location = player.getLocation();
-            player.getWorld().spawnParticle(Particle.HEART, location, 20, 0, 0, 0);
         }
         return true;
     }
@@ -54,6 +52,8 @@ public class fiestbump implements Listener, CommandExecutor {
             String playerName = player.getName();
             // Send the command output to players
             Objects.requireNonNull(targetPlayer).sendMessage("you been fiestbump by  " + playerName + command);
+            Location location = player.getLocation();
+            player.getWorld().spawnParticle(Particle.HEART, location, 20, 0, 0, 0);
         }
     }
 }

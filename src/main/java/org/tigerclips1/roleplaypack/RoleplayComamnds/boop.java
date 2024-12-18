@@ -35,8 +35,6 @@ public class boop implements Listener, CommandExecutor {
             Player player = (Player) sender;
             String playerName = player.getName();
             player.sendMessage("You booped " + playerName);
-            Location location = player.getLocation();
-            player.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 20, 0, 0, 0);
         }
         return true;
     }
@@ -54,6 +52,8 @@ public class boop implements Listener, CommandExecutor {
             String playerName = player.getName();
             // Send the command output to players
             Objects.requireNonNull(targetPlayer).sendMessage("you beem booped by  " + playerName + command);
+            Location location = player.getLocation();
+            player.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 20, 0, 0, 0);
         }
     }
 }

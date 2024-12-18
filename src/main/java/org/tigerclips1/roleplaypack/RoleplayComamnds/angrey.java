@@ -34,8 +34,6 @@ public class angrey implements Listener, CommandExecutor {
             Player player = (Player) sender;
             String playerName = player.getName();
             player.sendMessage("You Mad " + playerName);
-            Location location = player.getLocation();
-            player.getWorld().spawnParticle(Particle.VILLAGER_ANGRY, location, 20, 0, 0, 0);
         }
         return true;
     }
@@ -52,6 +50,9 @@ public class angrey implements Listener, CommandExecutor {
             String playerName = player.getName();
             // Send the command output to players
             Objects.requireNonNull(targetPlayer).sendMessage("this player is very mad at you for some reson " + playerName + command);
+            Location location = player.getLocation();
+            player.getWorld().spawnParticle(Particle.VILLAGER_ANGRY, location, 20, 0, 0, 0);
+
         }
     }
 }

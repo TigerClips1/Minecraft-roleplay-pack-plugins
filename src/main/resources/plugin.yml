@@ -73,3 +73,8 @@ commands:
         permissions: true
         usage: "/tag"
         aliases: [ ]
+  hoofbump:
+    description: hoofbump any pony
+    permissions: true
+    usage: "/hoofbump"
+    aliases: [ ]

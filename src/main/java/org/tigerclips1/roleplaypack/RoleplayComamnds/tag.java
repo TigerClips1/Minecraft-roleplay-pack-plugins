@@ -35,8 +35,6 @@ public class tag implements Listener, CommandExecutor {
             Player player = (Player) sender;
             String playerName = player.getName();
             player.sendMessage("You tag " + playerName);
-            Location location = player.getLocation();
-            player.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 20, 0, 0, 0);
         }
         return true;
     }
@@ -53,6 +51,8 @@ public class tag implements Listener, CommandExecutor {
             String playerName = player.getName();
             // Send the command output to players
             Objects.requireNonNull(targetPlayer).sendMessage("tag you it  " + playerName + command);
+            Location location = player.getLocation();
+            player.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 20, 0, 0, 0);
         }
     }
 }
