@@ -16,14 +16,14 @@ public final class Roleplaypack extends JavaPlugin {
         //handle Events
         Bukkit.getServer().getPluginManager().registerEvents(new sit(),this);
         Bukkit.getServer().getPluginManager().registerEvents(new sitOnTopPlayer(),this);
-        Bukkit.getPluginManager().registerEvents(new boop(), this);
-        Bukkit.getPluginManager().registerEvents(new brohoof(), this);
-        Bukkit.getPluginManager().registerEvents(new hoofbump(), this);
-        Bukkit.getPluginManager().registerEvents(new hug(), this);
-        Bukkit.getPluginManager().registerEvents(new nom(), this);
-        Bukkit.getPluginManager().registerEvents(new angrey(), this);
-        Bukkit.getPluginManager().registerEvents(new fiestbump(), this);
-        Bukkit.getPluginManager().registerEvents(new tag(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new boop(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new brohoof(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new hoofbump(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new hug(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new nom(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new angrey(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new fiestbump(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new tag(), this);
 
         // handle commands
         Objects.requireNonNull(getCommand("angrey")).setExecutor(new angrey());
